@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacto">
+    <header>
+        <p> 
+            <a href="index.html"> <img class="logo" src="img/logo_valencia_christmas.gif" alt=""> Inicio</a>
+            <a href="plantilla.html"> <img class="logo2" src="img/team.png" alt="">La Plantilla</a>
+            <a href="contacto.html"><img class="logo2" src="img/contacts.png" alt=""> Contacto</a>
+            <a href="taquillas.html"><img class="logo2" src="img/comprar.png" alt=""> Taquilla</a>
+        </p>
+    </header>
+
+    <main>
+        <div>
+            <form action="" method="post">
+                <h1>¿Algún problema? ¡Contacta con nosotros!</h1>
+                <p>Nombre</p><input type="text" name="Nombre" id="1">
+                <p>Apellidos</p><input type="text" name="Apellidos" id="2">
+                <p>Email</p><input type="email" name="Email" id="3">
+                <p>Teléfono</p><input type="tel" name="tel" id="4">
+                <p>Comentario de su problema</p><textarea name="Comentario" id="6" cols="30" rows="10" ></textarea>
+                <dialog id="dialog-2">
+                    <h1>¡Mensaje enviado!</h1>
+                  
+                    <p>Le contáctaremos cuando tengamos la respuesta, puede tardar un tiempo, pero contestaremos. ¡Ten paciencia!</p>
+                  
+                    <p>
+                      <input type="button" value="Cerrar" onclick="document.getElementById('dialog-2').removeAttribute('open')">
+                    </p>
+                </dialog>
+                <p><input type="button" value="Solicitar" onclick="document.getElementById('dialog-2').setAttribute('open', 'open')"></p>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

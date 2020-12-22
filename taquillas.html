@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquillas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+      <p> 
+          <a href="index.html"> <img class="logo" src="img/logo_valencia_christmas.gif" alt=""> Inicio</a>
+          <a href="plantilla.html"> <img class="logo2" src="img/team.png" alt="">La Plantilla</a>
+          <a href="contacto.html"><img class="logo2" src="img/contacts.png" alt=""> Contacto</a>
+          <a href="taquillas.html"><img class="logo2" src="img/comprar.png" alt=""> Taquilla</a>
+      </p>
+    </header>
+    
+    <div>
+    <form action="" method="post">
+        <h1>¡Solicita tu entrada!</h1>
+        <p>Nombre</p><input type="text" name="Nombre" id="1">
+        <p>Apellidos</p><input type="text" name="Apellidos" id="2">
+        <p>Email</p><input type="email" name="Email" id="3">
+        <p>Teléfono</p><input type="tel" name="tel" id="4">
+        <p>Asiento (Máx 100)</p><input type="number" name="Asiento" id="5" min="0" max="100"> <br>
+    </form>
+
+    <dialog id="dialog-1">
+        <h1>Tu entrada ha sido pedida</h1>
+      
+        <p>¡Le enviaremos un correo confirmando su asistencia!</p>
+      
+        <p>
+          <input type="button" value="Cerrar" onclick="document.getElementById('dialog-1').removeAttribute('open')">
+        </p>
+    </dialog>
+      
+        <p>
+          <input type="button" value="Solicitar" onclick="document.getElementById('dialog-1').setAttribute('open', 'open')">
+        </p>
+    </div>
+
+    <div class="Mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.7639989196173!2d-0.3607768846325154!3d39.47465997948578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7504540b8de53e49!2sEstadio%20de%20Mestalla%20Valencia%20CF!5e0!3m2!1ses!2ses!4v1608300270705!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    
+</body>
+</html>
